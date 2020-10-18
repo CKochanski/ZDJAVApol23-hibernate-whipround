@@ -5,6 +5,7 @@ import pl.sda.model.Whipround;
 public class WhiproundDao extends AbstractDao<Whipround>  {
 
 
-
-
+    public WhiproundDao() {
+        super(Whipround.class);
+    }
 }
