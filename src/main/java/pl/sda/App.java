@@ -25,7 +25,8 @@ public class App {
 
 
 //        System.out.println(whiproundDao.getActiveWhiprounds());
-        System.out.println(donationDao.findByWhiproundId(1));
+//        System.out.println(donationDao.findByWhiproundId(1));
+        System.out.println(donationDao.findByUserId(1));
 
     }
 }

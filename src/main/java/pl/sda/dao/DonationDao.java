@@ -20,4 +20,14 @@ public class DonationDao extends AbstractDao<Donation> {
         session.close();
         return list;
     }
+
+    public List<Donation> findByUserId (int id){
+        Session session = SessionProvider.getSession();
+        List<Donation> list = session.createQuery("from Donation where user.id =:id", Donation.class)
+                .setParameter("id", id)
+                .list();
+        session.close();
+        return list;
+    }
+
 }
