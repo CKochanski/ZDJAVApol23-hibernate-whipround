@@ -13,5 +13,6 @@
         <property name="hbm2ddl.auto">update</property>
         <mapping class="pl.sda.model.Whipround"/>
         <mapping class="pl.sda.model.User"/>
+        <mapping class="pl.sda.model.Donation"/>
     </session-factory>
 </hibernate-configuration>
