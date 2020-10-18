@@ -21,7 +21,7 @@ public class App
         DonationDao donationDao = new DonationDao();
         UserDao userDao = new UserDao();
         Whipround whipround = new Whipround("Test", BigDecimal.valueOf(250));
-       // whiproundDao.add(whipround);
+       whiproundDao.add(whipround);
         userDao.add(new User("Anna", "Kowalska"));
         Whipround whipround1 = new Whipround("Animals", BigDecimal.valueOf(2000));
         whiproundDao.add(whipround1);
@@ -34,6 +34,8 @@ public class App
         donationDao.add(new Donation(BigDecimal.valueOf(50),userDaoById1,whiproundfromdatabase1));
         donationDao.add(new Donation(BigDecimal.valueOf(75),userDaoById1,whiproundfromdatabase1));
         donationDao.add(new Donation(BigDecimal.valueOf(2000),userDaoById1,whiproundfromdatabase2));
+
+
 
 
     }
